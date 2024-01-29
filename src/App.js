@@ -28,11 +28,7 @@ function App() {
   //console.log('meanings:',meanings);
   
   useEffect(() => {
-    let timerId
-        window.clearTimeout(timerId);
-        timerId = setTimeout(() => {
-          dictionaryApi();
-        },1500)
+    dictionaryApi();
   }, [word,language]);
 
   const toggleTheme = () => {
