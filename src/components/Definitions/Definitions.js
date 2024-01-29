@@ -8,7 +8,7 @@ const Definitions = ({word, meanings, language, themeMode}) => {
         {
             meanings[0] && word && language === 'en' && (
                 <audio src={meanings[0].phonetics[0] && meanings[0].phonetics[0].audio} 
-                style={{backgroundColor:themeMode === "light" ? "#000": "#fff", borderRadius:10, width: "100%"}} 
+                style={{backgroundColor:"white", borderRadius:10, width: "100%"}} 
                 controls 
                 >
                     Your browser doesn't support audio element

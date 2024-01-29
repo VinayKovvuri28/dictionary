@@ -1,12 +1,12 @@
 import axios from 'axios';
-import {useEffect, useState, useContext, createContext} from 'react';
+import {useEffect, useState, createContext} from 'react';
 import './App.css';
 import {Container, IconButton} from "@mui/material";
-import { useTheme, ThemeProvider, createTheme } from '@mui/material/styles';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import Header from './components/Header/Header';
 import Definitions from './components/Definitions/Definitions';
+import Footer from "./components/Footer/Footer";
 
 export const ThemeModeContext = createContext(null);
 
@@ -56,6 +56,7 @@ function App() {
           <Header language={language} setLanguage={setLanguage} word={word} setWord={setWord} themeMode={themeMode} />
           {meanings && (<Definitions word={word} meanings={meanings}  language={language} themeMode={themeMode} />)}
         </Container>
+        <Footer />
       </div>
   );
 }
