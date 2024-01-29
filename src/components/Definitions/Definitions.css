@@ -1,0 +1,44 @@
+.meanings {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    height: 55vh;
+    border: 8px solid rgb(105, 105, 105);
+    border-radius: 8px;
+    padding: 5px 10px;
+    overflow-x: hidden;
+}
+
+
+.subTitle {
+    font-size: 5vw;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.singleMean {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
+#dark.singleMean{
+    background-color: white;
+    color: black;
+}
+
+#light.singleMean{
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+@media (max-width:900px){
+    .meanings{
+        height: 60vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
